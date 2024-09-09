@@ -1,0 +1,297 @@
+/* Загальні стилі сторінки */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #74ebd5, #acb6e5); /* Градієнтний фон */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Тінь */
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Анімація появи форми */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.login-form h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Стилі для полів введення */
+.login-form input {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border-radius: 30px; /* Круглі краї */
+  border: 1px solid #ddd;
+  background-color: #f7f9fc;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.login-form input:focus {
+  border-color: #74ebd5; /* Колір рамки при фокусі */
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 200, 255, 0.3); /* Світіння при фокусі */
+}
+
+/* Стилі для кнопки */
+.login-form button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 30px;
+  border: none;
+  background-color: #74ebd5; /* Колір кнопки */
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #4bb6e5; /* Зміна кольору при наведенні */
+  box-shadow: 0 4px 15px rgba(0, 200, 255, 0.3); /* Тінь при наведенні */
+}
+
+/* Для додаткового ефекту можна додати тіні */
+.login-form button:active {
+  background-color: #3a98d0;
+  box-shadow: 0 2px 8px rgba(0, 100, 255, 0.2);
+}
+
+/* Декоративний футер або додатковий текст */
+.footer-text {
+  margin-top: 20px;
+  color: #888;
+  font-size: 14px;
+}
+
+.footer-text a {
+  color: #74ebd5;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-text a:hover {
+  color: #4bb6e5;
+  text-decoration: underline;
+}
+
+.question-container h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.options button {
+  padding: 10px;
+  margin: 5px;
+  width: 100%;
+  border-radius: 5px;
+  background-color: #eee;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  transition: background-color 0.3s;
+}
+
+.options button:hover {
+  background-color: #ddd;
+}
+
+#nextButton {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.results-container {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.results-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.incorrect-question {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.incorrect-question p {
+  margin: 5px 0;
+}
+
+/* Анімації фонового ефекту (плаваючі кульки) */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Стилізація для плаваючих кульок */
+.bubble {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.7;
+  background: rgba(255, 255, 255, 0.3);
+  animation: float 4s ease-in-out infinite;
+}
+
+.bubble:nth-child(1) {
+  width: 100px;
+  height: 100px;
+  left: 10%;
+  animation-duration: 6s;
+}
+
+.bubble:nth-child(2) {
+  width: 150px;
+  height: 150px;
+  left: 30%;
+  animation-duration: 4s;
+}
+
+.bubble:nth-child(3) {
+  width: 80px;
+  height: 80px;
+  left: 50%;
+  animation-duration: 5s;
+}
+
+.bubble:nth-child(4) {
+  width: 120px;
+  height: 120px;
+  left: 70%;
+  animation-duration: 3s;
+}
+
+.bubble:nth-child(5) {
+  width: 90px;
+  height: 90px;
+  left: 85%;
+  animation-duration: 7s;
+}
+
+/* Ефект при натисканні на кнопки */
+button:active {
+  transform: scale(0.95);
+  transition: transform 0.2s ease;
+}
+
+/* Ефект підсвічування при правильній/неправильній відповіді */
+.correct-answer {
+  background-color: #4caf50;
+  color: white;
+  animation: flash 0.5s ease;
+}
+
+.wrong-answer {
+  background-color: #ff6347;
+  color: white;
+  animation: shake 0.5s ease;
+}
+
+/* Анімація "спалаху" для правильної відповіді */
+@keyframes flash {
+  0% {
+    background-color: #4caf50;
+  }
+  50% {
+    background-color: #45a049;
+  }
+  100% {
+    background-color: #4caf50;
+  }
+}
+
+/* Анімація "трусіння" для неправильної відповіді */
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Стилізація блоку з привітанням */
+.welcome-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.welcome-section h2 {
+  font-size: 26px;
+  color: #333;
+  margin-top: 10px;
+}
+
+.welcome-section p {
+  font-size: 16px;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Стилізація для фото викладача */
+.teacher-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%; /* Кругла форма фото */
+  object-fit: cover; /* Щоб фото не розтягувалося */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Тінь для фото */
+  margin-bottom: 15px;
+}
