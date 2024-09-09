@@ -31,204 +31,204 @@ const questions = [
     ],
     answer: 0,
   },
-  //   {
-  //     question: 'Який атрибут HTML використовується для додавання посилань?',
-  //     options: ['link', 'src', 'href', 'url'],
-  //     answer: 2,
-  //   },
-  //   {
-  //     question: 'Який тег використовується для створення списку з маркерами?',
-  //     options: ['<ul>', '<li>', '<ol>', '<list>'],
-  //     answer: 0,
-  //   },
-  //   {
-  //     question: 'Що означає тег <br> в HTML?',
-  //     options: [
-  //       'Перехід на нову сторінку',
-  //       'Жирний текст',
-  //       'Перенос на новий рядок',
-  //       'Горизонтальна лінія',
-  //     ],
-  //     answer: 2,
-  //   },
-  //   {
-  //     question: 'Який атрибут використовується для зміни кольору тексту в CSS?',
-  //     options: ['font-color', 'text-color', 'color', 'background-color'],
-  //     answer: 2,
-  //   },
-  //   {
-  //     question: 'Який тег використовується для вставки зображення в HTML?',
-  //     options: ['<img>', '<image>', '<pic>', '<src>'],
-  //     answer: 0,
-  //   },
-  //   {
-  //     question: 'Який символ використовується для коментування в HTML?',
-  //     options: ['//', '<!-- -->', '/**/', '#'],
-  //     answer: 1,
-  //   },
-  //   {
-  //     question: 'Як задати розмір шрифту в CSS?',
-  //     options: ['font-size', 'size', 'font-style', 'text-size'],
-  //     answer: 0,
-  //   },
-  //   {
-  //     question: 'Який тег створює новий абзац у HTML?',
-  //     options: ['<div>', '<p>', '<a>', '<span>'],
-  //     answer: 1,
-  //   },
-  //   {
-  //     question: 'Що означає властивість margin у CSS?',
-  //     options: [
-  //       'Внутрішній відступ елементу',
-  //       'Відстань між елементами',
-  //       'Ширина межі',
-  //       'Висота елемента',
-  //     ],
-  //     answer: 1,
-  //   },
-  //   {
-  //     question: 'Як зробити текст жирним у HTML?',
-  //     options: ['<b>', '<strong>', '<bold>', 'Обидва варіанти: <b> і <strong>'],
-  //     answer: 3,
-  //   },
-  //   {
-  //     question: 'Який атрибут HTML використовується для введення даних у формі?',
-  //     options: ['<input>', '<form>', '<field>', '<button>'],
-  //     answer: 0,
-  //   },
-  //   {
-  //     question: 'Яка властивість CSS використовується для зміни фону сторінки?',
-  //     options: [
-  //       'background-image',
-  //       'background-color',
-  //       'color',
-  //       'background-style',
-  //     ],
-  //     answer: 1,
-  //   },
-  //   {
-  //     question: 'Що таке padding в CSS?',
-  //     options: [
-  //       'Внутрішній відступ всередині елементу',
-  //       'Відступ між елементами',
-  //       'Ширина межі',
-  //       'Колір фону',
-  //     ],
-  //     answer: 0,
-  //   },
-  //   {
-  //     question: 'Яка властивість CSS змінює вирівнювання тексту?',
-  //     options: ['text-align', 'align', 'text-decoration', 'font-align'],
-  //     answer: 0,
-  //   },
-  //   {
-  //     question: 'Що робить тег <a> в HTML?',
-  //     options: [
-  //       'Вставляє зображення',
-  //       'Створює посилання',
-  //       'Додає відео',
-  //       'Створює абзац',
-  //     ],
-  //     answer: 1,
-  //   },
-  //   {
-  //     question:
-  //       'Яка властивість CSS використовується для створення тіні у тексту?',
-  //     options: ['text-shadow', 'box-shadow', 'font-shadow', 'shadow'],
-  //     answer: 0,
-  //   },
-  //   {
-  //     question: 'Що означає властивість border в CSS?',
-  //     options: [
-  //       'Зміна кольору фону',
-  //       'Встановлення розміру шрифту',
-  //       'Додавання рамки навколо елементу',
-  //       'Встановлення відступів',
-  //     ],
-  //     answer: 2,
-  //   },
-  //   {
-  //     question: 'Як вказати зображення як фон у CSS?',
-  //     options: [
-  //       'background-img',
-  //       'background-color',
-  //       'background-image',
-  //       'img-background',
-  //     ],
-  //     answer: 2,
-  //   },
-  //   {
-  //     question:
-  //       'Який тег HTML використовується для відображення відео на сторінці?',
-  //     options: ['<video>', '<media>', '<movie>', '<embed>'],
-  //     answer: 0,
-  //   },
-  //   {
-  //     question: 'Що робить властивість display: none в CSS?',
-  //     options: [
-  //       'Приховує елемент зі сторінки',
-  //       'Змінює колір елементу',
-  //       'Видаляє елемент зі сторінки',
-  //       'Зміщує елемент на новий рядок',
-  //     ],
-  //     answer: 0,
-  //   },
-  //   {
-  //     question: 'Як задати круглу рамку для елемента у CSS?',
-  //     options: [
-  //       'border: 50px',
-  //       'border-radius: 50%',
-  //       'border-style: round',
-  //       'circle-border: true',
-  //     ],
-  //     answer: 1,
-  //   },
-  //   {
-  //     question: 'Що робить тег <table> в HTML?',
-  //     options: [
-  //       'Створює список',
-  //       'Створює форму',
-  //       'Створює таблицю',
-  //       'Створює заголовок',
-  //     ],
-  //     answer: 2,
-  //   },
-  //   {
-  //     question: 'Як задати колір для елемента у CSS?',
-  //     options: ['color', 'text-color', 'font-color', 'bg-color'],
-  //     answer: 0,
-  //   },
-  //   {
-  //     question: 'Як у CSS змінити стиль тексту на курсив?',
-  //     options: [
-  //       'font-style: italic',
-  //       'text-transform: italic',
-  //       'font-italic: true',
-  //       'text-style: italic',
-  //     ],
-  //     answer: 0,
-  //   },
-  //   {
-  //     question: 'Який тег використовується для створення кнопки в HTML?',
-  //     options: ['<button>', '<input>', '<form>', '<btn>'],
-  //     answer: 0,
-  //   },
-  //   {
-  //     question:
-  //       'Яка властивість CSS використовується для зміни розміру елементів?',
-  //     options: ['height', 'size', 'dimensions', 'transform'],
-  //     answer: 0,
-  //   },
-  //   {
-  //     question: 'Що робить атрибут alt у тегі <img>?',
-  //     options: [
-  //       'Задає альтернативний текст для зображення',
-  //       'Задає розмір зображення',
-  //       'Додає рамку до зображення',
-  //       'Змінює формат зображення',
-  //     ],
-  //     answer: 0,
-  //   },
+  {
+    question: 'Який атрибут HTML використовується для додавання посилань?',
+    options: ['link', 'src', 'href', 'url'],
+    answer: 2,
+  },
+  {
+    question: 'Який тег використовується для створення списку з маркерами?',
+    options: ['<ul>', '<li>', '<ol>', '<list>'],
+    answer: 0,
+  },
+  {
+    question: 'Що означає тег <br> в HTML?',
+    options: [
+      'Перехід на нову сторінку',
+      'Жирний текст',
+      'Перенос на новий рядок',
+      'Горизонтальна лінія',
+    ],
+    answer: 2,
+  },
+  {
+    question: 'Який атрибут використовується для зміни кольору тексту в CSS?',
+    options: ['font-color', 'text-color', 'color', 'background-color'],
+    answer: 2,
+  },
+  {
+    question: 'Який тег використовується для вставки зображення в HTML?',
+    options: ['<img>', '<image>', '<pic>', '<src>'],
+    answer: 0,
+  },
+  {
+    question: 'Який символ використовується для коментування в HTML?',
+    options: ['//', '<!-- -->', '/**/', '#'],
+    answer: 1,
+  },
+  {
+    question: 'Як задати розмір шрифту в CSS?',
+    options: ['font-size', 'size', 'font-style', 'text-size'],
+    answer: 0,
+  },
+  {
+    question: 'Який тег створює новий абзац у HTML?',
+    options: ['<div>', '<p>', '<a>', '<span>'],
+    answer: 1,
+  },
+  {
+    question: 'Що означає властивість margin у CSS?',
+    options: [
+      'Внутрішній відступ елементу',
+      'Відстань між елементами',
+      'Ширина межі',
+      'Висота елемента',
+    ],
+    answer: 1,
+  },
+  {
+    question: 'Як зробити текст жирним у HTML?',
+    options: ['<b>', '<strong>', '<bold>', 'Обидва варіанти: <b> і <strong>'],
+    answer: 3,
+  },
+  {
+    question: 'Який атрибут HTML використовується для введення даних у формі?',
+    options: ['<input>', '<form>', '<field>', '<button>'],
+    answer: 0,
+  },
+  {
+    question: 'Яка властивість CSS використовується для зміни фону сторінки?',
+    options: [
+      'background-image',
+      'background-color',
+      'color',
+      'background-style',
+    ],
+    answer: 1,
+  },
+  {
+    question: 'Що таке padding в CSS?',
+    options: [
+      'Внутрішній відступ всередині елементу',
+      'Відступ між елементами',
+      'Ширина межі',
+      'Колір фону',
+    ],
+    answer: 0,
+  },
+  {
+    question: 'Яка властивість CSS змінює вирівнювання тексту?',
+    options: ['text-align', 'align', 'text-decoration', 'font-align'],
+    answer: 0,
+  },
+  {
+    question: 'Що робить тег <a> в HTML?',
+    options: [
+      'Вставляє зображення',
+      'Створює посилання',
+      'Додає відео',
+      'Створює абзац',
+    ],
+    answer: 1,
+  },
+  {
+    question:
+      'Яка властивість CSS використовується для створення тіні у тексту?',
+    options: ['text-shadow', 'box-shadow', 'font-shadow', 'shadow'],
+    answer: 0,
+  },
+  {
+    question: 'Що означає властивість border в CSS?',
+    options: [
+      'Зміна кольору фону',
+      'Встановлення розміру шрифту',
+      'Додавання рамки навколо елементу',
+      'Встановлення відступів',
+    ],
+    answer: 2,
+  },
+  {
+    question: 'Як вказати зображення як фон у CSS?',
+    options: [
+      'background-img',
+      'background-color',
+      'background-image',
+      'img-background',
+    ],
+    answer: 2,
+  },
+  {
+    question:
+      'Який тег HTML використовується для відображення відео на сторінці?',
+    options: ['<video>', '<media>', '<movie>', '<embed>'],
+    answer: 0,
+  },
+  {
+    question: 'Що робить властивість display: none в CSS?',
+    options: [
+      'Приховує елемент зі сторінки',
+      'Змінює колір елементу',
+      'Видаляє елемент зі сторінки',
+      'Зміщує елемент на новий рядок',
+    ],
+    answer: 0,
+  },
+  {
+    question: 'Як задати круглу рамку для елемента у CSS?',
+    options: [
+      'border: 50px',
+      'border-radius: 50%',
+      'border-style: round',
+      'circle-border: true',
+    ],
+    answer: 1,
+  },
+  {
+    question: 'Що робить тег <table> в HTML?',
+    options: [
+      'Створює список',
+      'Створює форму',
+      'Створює таблицю',
+      'Створює заголовок',
+    ],
+    answer: 2,
+  },
+  {
+    question: 'Як задати колір для елемента у CSS?',
+    options: ['color', 'text-color', 'font-color', 'bg-color'],
+    answer: 0,
+  },
+  {
+    question: 'Як у CSS змінити стиль тексту на курсив?',
+    options: [
+      'font-style: italic',
+      'text-transform: italic',
+      'font-italic: true',
+      'text-style: italic',
+    ],
+    answer: 0,
+  },
+  {
+    question: 'Який тег використовується для створення кнопки в HTML?',
+    options: ['<button>', '<input>', '<form>', '<btn>'],
+    answer: 0,
+  },
+  {
+    question:
+      'Яка властивість CSS використовується для зміни розміру елементів?',
+    options: ['height', 'size', 'dimensions', 'transform'],
+    answer: 0,
+  },
+  {
+    question: 'Що робить атрибут alt у тегі <img>?',
+    options: [
+      'Задає альтернативний текст для зображення',
+      'Задає розмір зображення',
+      'Додає рамку до зображення',
+      'Змінює формат зображення',
+    ],
+    answer: 0,
+  },
 ]
 
 let currentQuestionIndex = 0
